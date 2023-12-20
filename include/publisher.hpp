@@ -1,6 +1,9 @@
 #pragma once
 
+#include <cstdint>
 
+
+ // TODO: Implement socket communication.
 class Publisher
 {
 public:
@@ -9,10 +12,12 @@ public:
 
     static Publisher& get_instance();
 
-private:
-    Publisher() = default;
-    ~Publisher() = default;
+    // Publish(uint16_t port, std::vector<squares> squares, std::vector<circles> circles)
 
 private:
-    int socket;
+    Publisher() = default;
+
+private:
+    // int _udp_server_socket;
+    // std::set<inet_address> _subscribers;
 };
