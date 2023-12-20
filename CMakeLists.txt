@@ -10,7 +10,7 @@ add_executable(publisher
 )
 
 target_include_directories(publisher PRIVATE ${CMAKE_SOURCE_DIR}/include)
-
+target_link_libraries(publisher ${CMAKE_SOURCE_DIR}/sockpp/build/Debug/sockpp.lib)
 
 add_executable(test_sanity
     ${CMAKE_SOURCE_DIR}/src/coordinates.cpp
